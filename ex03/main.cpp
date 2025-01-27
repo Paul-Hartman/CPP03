@@ -6,7 +6,7 @@
 /*   By: phartman <phartman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 13:05:35 by phartman          #+#    #+#             */
-/*   Updated: 2025/01/27 17:28:27 by phartman         ###   ########.fr       */
+/*   Updated: 2025/01/27 17:55:27 by phartman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int main(int argc, char const *argv[])
     DiamondTrap dt1;
     dt1.whoAmI();
     dt1.attack("target1");
+	dt1.guardGate();
+	dt1.highFivesGuys();
 
 	std::cout << std::endl;
 
