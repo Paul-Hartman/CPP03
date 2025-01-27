@@ -6,7 +6,7 @@
 /*   By: phartman <phartman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 13:05:35 by phartman          #+#    #+#             */
-/*   Updated: 2025/01/27 15:09:59 by phartman         ###   ########.fr       */
+/*   Updated: 2025/01/27 15:14:00 by phartman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,11 @@ int main(int argc, char const *argv[])
 	FragTrap john("John");
 	FragTrap jane("Jane");
 	FragTrap jenny(jane);
+	ScavTrap jessy("Jessy");
+	ScavTrap jessica("Jessica");
+	ScavTrap jess(jessica);
+	ScavTrap jessica2(jess);
+	jess = jessica2;
 	john = jane;
 	return 0;
 }
