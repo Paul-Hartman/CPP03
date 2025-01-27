@@ -1,14 +1,12 @@
-NAME := fixed
+NAME := claptrap
 CC := c++
 CFLAGS := -Wall -Wextra -Werror -std=c++98
 OBJDIR = objs
-SRCS = Fixed.cpp main.cpp
-OBJS := $(patsubst %.cpp, $(OBJDIR)/%.o, $(SRCS))
+SRCS = ClapTrap.cpp main.cpp
+OBJS := $(SRCS:%.cpp=$(OBJDIR)/%.o)
 
-$(OBJDIR):
+$(OBJDIR)/%.o: %.cpp
 	mkdir -p $(OBJDIR)
-
-$(OBJDIR)/%.o: %.cpp | $(OBJDIR)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(OBJS)
