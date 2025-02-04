@@ -6,7 +6,7 @@
 /*   By: phartman <phartman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 15:27:21 by phartman          #+#    #+#             */
-/*   Updated: 2025/01/27 17:42:42 by phartman         ###   ########.fr       */
+/*   Updated: 2025/02/04 12:33:34 by phartman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,10 @@ class DiamondTrap : public ScavTrap, public FragTrap{
 
 		void attack(const std::string& target);
 		void whoAmI();
+
+		void printEnergyPoints();
+		void printHitPoints();
+		void printAttackDamage();
 		
 		
 	private:

@@ -6,7 +6,7 @@
 /*   By: phartman <phartman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 15:27:18 by phartman          #+#    #+#             */
-/*   Updated: 2025/01/27 17:50:04 by phartman         ###   ########.fr       */
+/*   Updated: 2025/02/04 12:41:35 by phartman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), Scav
 	this->_hitPoints = FragTrap::_hitPoints;
 	this->_energyPoints = ScavTrap::_energyPoints;
 	this->_attackDamage = FragTrap::_attackDamage;
+	std::cout << "DiamondTrap damage = " << this->_attackDamage << std::endl;
 }
 
 DiamondTrap::DiamondTrap(const DiamondTrap &other) : ScavTrap(other), FragTrap(other){
@@ -57,5 +58,17 @@ void DiamondTrap::attack(const std::string& target){
 void DiamondTrap::whoAmI(){
 	std::cout << RED << "My name is " << this->_name << std::endl;
 	std::cout << RED << "My claptrap name is " << this->ClapTrap::_name << RESET << std::endl;
+}
+
+void DiamondTrap::printEnergyPoints(){
+	std::cout << RED << "Energy points: " << this->_energyPoints << RESET << std::endl;
+}
+
+void DiamondTrap::printHitPoints(){
+	std::cout << RED << "Hit points: " << this->_hitPoints << RESET << std::endl;
+}
+
+void DiamondTrap::printAttackDamage(){
+	std::cout << RED << "Attack damage: " << this->_attackDamage << RESET << std::endl;
 }
 	
