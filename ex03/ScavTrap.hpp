@@ -6,7 +6,7 @@
 /*   By: phartman <phartman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 14:05:10 by phartman          #+#    #+#             */
-/*   Updated: 2025/01/27 16:50:05 by phartman         ###   ########.fr       */
+/*   Updated: 2025/02/04 14:47:40 by phartman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ class ScavTrap : virtual public ClapTrap {
 
 		void attack(const std::string& target);
 		void guardGate();
+
+		int getEnergyPoints();
 		
 
 	private:

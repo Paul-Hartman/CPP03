@@ -6,7 +6,7 @@
 /*   By: phartman <phartman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 13:05:35 by phartman          #+#    #+#             */
-/*   Updated: 2025/02/04 12:42:21 by phartman         ###   ########.fr       */
+/*   Updated: 2025/02/04 16:05:54 by phartman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,16 @@ int main(int argc, char const *argv[])
 	dt1.printEnergyPoints();
 	dt1.printHitPoints();
 	dt1.printAttackDamage();
-    std::cout << "did it work?" << std::endl;
-	
+	dt1.attack("target");
+	dt1.printEnergyPoints();
+	// DiamondTrap dt2;
 
+	// dt2.whoAmI();
+	// dt2.attack("target1");
+	// dt2.guardGate();
+	// dt2.highFivesGuys();
+	// dt2.printEnergyPoints();
+	// dt2.printHitPoints();
+	// dt2.printAttackDamage();
     return 0;
 }

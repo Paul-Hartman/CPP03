@@ -49,3 +49,7 @@ void ScavTrap::attack(const std::string& target){
 void ScavTrap::guardGate(){
 	std::cout << GREEN << "ScavTrap " << this->_name << " has entered in Gate keeper mode." << RESET << std::endl;
 }
+
+int ScavTrap::getEnergyPoints(){
+	return this->_energyPoints;
+}

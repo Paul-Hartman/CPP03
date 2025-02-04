@@ -6,7 +6,7 @@
 /*   By: phartman <phartman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 14:45:04 by phartman          #+#    #+#             */
-/*   Updated: 2025/02/04 12:48:07 by phartman         ###   ########.fr       */
+/*   Updated: 2025/02/04 14:06:33 by phartman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,3 +49,8 @@ FragTrap::~FragTrap(){
 void FragTrap::highFivesGuys(){
 	std::cout << YELLOW << "Fragtrap " << this->_name << " is requesting a high five." << RESET << std::endl;
 }
+
+int FragTrap::getEnergyPoints(){
+	return this->_energyPoints;
+}
+
