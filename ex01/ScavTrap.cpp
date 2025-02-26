@@ -23,6 +23,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap &other){
 	std::cout << "ScavTrap assignation operator called" << std::endl;
 	if (this != &other){
 		ClapTrap::operator=(other);
+		this->_name = other._name;
 		this->_hitPoints = other._hitPoints;
 		this->_energyPoints = other._energyPoints;
 		this->_attackDamage = other._attackDamage;

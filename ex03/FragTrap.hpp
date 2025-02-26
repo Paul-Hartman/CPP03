@@ -6,7 +6,7 @@
 /*   By: phartman <phartman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 14:48:15 by phartman          #+#    #+#             */
-/*   Updated: 2025/02/04 14:47:33 by phartman         ###   ########.fr       */
+/*   Updated: 2025/02/26 17:10:58 by phartman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ class FragTrap : virtual public ClapTrap {
 		FragTrap &operator=(const FragTrap &other);
 		~FragTrap();
 
+		void attack(const std::string& target);
 		void highFivesGuys(void);
 		int getEnergyPoints();
 

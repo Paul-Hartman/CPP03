@@ -6,7 +6,7 @@
 /*   By: phartman <phartman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 13:05:31 by phartman          #+#    #+#             */
-/*   Updated: 2025/01/27 14:33:28 by phartman         ###   ########.fr       */
+/*   Updated: 2025/02/26 16:41:46 by phartman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,15 @@
 #ifndef CLAPTRAP_HPP
 # define CLAPTRAP_HPP
 #include <iostream>
+
+#define RESET   "\033[0m"
+#define RED     "\033[31m"
+#define GREEN   "\033[32m"
+#define YELLOW  "\033[33m"
+#define BLUE    "\033[34m"
+#define MAGENTA "\033[35m"
+#define CYAN    "\033[36m"
+#define WHITE   "\033[37m"
 
 class ClapTrap{
 	public:

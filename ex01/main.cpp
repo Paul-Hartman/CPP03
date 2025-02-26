@@ -6,7 +6,7 @@
 /*   By: phartman <phartman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 13:05:35 by phartman          #+#    #+#             */
-/*   Updated: 2025/01/27 14:15:10 by phartman         ###   ########.fr       */
+/*   Updated: 2025/02/26 16:21:46 by phartman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,11 @@ int main(int argc, char const *argv[])
 	jane.takeDamage(5);
 	jane.beRepaired(3);
 	jane.attack("John");
-	john.takeDamage(5);
-	john.beRepaired(3);
-	john.beRepaired(3);
-	john.beRepaired(3);
-	john.beRepaired(3);
-	john.beRepaired(3);
-	john.beRepaired(3);
-	john.beRepaired(3);
-	john.beRepaired(3);
-	john.beRepaired(3);
-	john.beRepaired(3);
+	john.takeDamage(99);
+	john.takeDamage(1);
+	john.takeDamage(1);
+	for(int i = 0; i < 50; i++)
+		john.beRepaired(1);
+	john.guardGate();
 	return 0;
 }

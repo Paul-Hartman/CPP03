@@ -6,7 +6,7 @@
 /*   By: phartman <phartman@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/27 13:05:35 by phartman          #+#    #+#             */
-/*   Updated: 2025/02/04 16:05:54 by phartman         ###   ########.fr       */
+/*   Updated: 2025/02/26 17:03:17 by phartman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,22 +50,13 @@ int main(int argc, char const *argv[])
  	(void)argv;
 	DiamondTrap dt1("Diamond");
 	dt1.whoAmI();
-	dt1.attack("target1");
 	dt1.guardGate();
 	dt1.highFivesGuys();
 	dt1.printEnergyPoints();
 	dt1.printHitPoints();
 	dt1.printAttackDamage();
-	dt1.attack("target");
+	dt1.attack("target1");
 	dt1.printEnergyPoints();
-	// DiamondTrap dt2;
 
-	// dt2.whoAmI();
-	// dt2.attack("target1");
-	// dt2.guardGate();
-	// dt2.highFivesGuys();
-	// dt2.printEnergyPoints();
-	// dt2.printHitPoints();
-	// dt2.printAttackDamage();
     return 0;
 }
